@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Software Engineer" name="description" />
+    <meta content="software,engineer" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="Moh Odejimi" property="og:title" />
+    <meta content="assets/images/me.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>Projects</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="workexperience.html">Work experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-nav-top">
+            <a href="/">
+                <h2 class="text-2xl">Mohammed</h2>
+            </a>
+
+            <button class="hamburger-menu" onclick="openNav()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workexperience.html">Work experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button onclick="closeNav()" class="close-mobile-nav">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <p>During my free time, I like to build things that I find interesting and/or would use; sometimes to learn more about something or just to fix a problem that I feel can be utilized by users. Here are a couple of them, you can find other random things I'm engaged with on my GitHub page.</p>
+
+        <h2 class="mt-6 text-2xl">Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="/assets/images/HA.png" />
+                <div class="project-description">
+                    <h3>HTTP Assistant.</h3>
+                    <p>A user friendly web application that enables users to make HTTP requests to any API endpoint and view response data.</p>
+                    <a href="https://http-assistant.vercel.app">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/artCanvas.png" />
+                <div class="project-description">
+                    <h3>Art Canvas.</h3>
+                    <p>Art Canvas is a versatile drawing tool with functionality akin to TL Draw. It offers a user-friendly interface for creating digital art, equipped with a variety of brushes, shapes, and editing options.</p>
+                    <a href="https://artcanvas.vercel.app/">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="omega">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/weather360.png" />
+                <div class="project-description">
+                    <h3>Weather 360.</h3>
+                    <p>Weather360 provides clients' applications with the capability to retrieve weather data for cities and nations globally. Additionally, the application offers a comprehensive 5-day weather forecast, enhancing its utility for users seeking accurate and timely weather information.</p>
+                    <a href="https://weather360.vercel.app/">View Project</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="date"></span> Mohammed.</footer>
+</body>
+
+</html>
